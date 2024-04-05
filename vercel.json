@@ -11,5 +11,8 @@
             "src": "/generate_dsa_questions",
             "dest": "main.py"
         }
-    ]
+    ],
+    "env": {
+        "VERCEL_PYTHON_VERSION": "3.8"
+    }
 }
