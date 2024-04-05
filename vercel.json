@@ -1,18 +1,11 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "main.py",
-            "use": "@vercel/python"
-        }
-    ],
+  "builds": [
+    { "src": "main.py", "use": "@vercel/python" }
+  ],
     "routes": [
-        {
-            "src": "/generate_dsa_questions",
-            "dest": "main.py"
-        }
-    ],
-    "env": {
-        "VERCEL_PYTHON_VERSION": "3.8"
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
     }
+        ]
 }
